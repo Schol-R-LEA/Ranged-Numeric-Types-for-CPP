@@ -1,0 +1,4 @@
+A simple template class for generating integeral and floating-point types within fixed ranges.
+
+Takes a base type, a lowert bound, a parameter setting how underflows should be handled, an
+upper bound, another parameter setting how overlow conditions should be handled.

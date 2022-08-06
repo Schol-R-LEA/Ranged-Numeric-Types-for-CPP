@@ -2,6 +2,7 @@
 #define _RANGED_NUMBERS_H_
 
 #include <iostream>
+#include <typeinfo>
 #include <cmath>
 
 namespace Ranged 
@@ -111,8 +112,15 @@ namespace Ranged
 
   template <typename OST> std::ostream& operator<<(std::ostream& os, const OST& rn)
   {
-    os << rn.value;
-    return os;
+     if (typeid(rn.value) == typeid(unsigned char) ||  typeid(rn.value) == typeid(signed char))
+     {
+        os << static_cast<int16_t>(rn.value);
+     }
+     else
+     {      
+        os << rn.value;
+     }
+     return os;
   }
 };
 

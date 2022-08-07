@@ -11,19 +11,23 @@ TEST_CASE("Test a simple range representing Celsius temperatures.")
   Celsius_Temp x(10000), y(10001);
   REQUIRE_THROWS(Celsius_Temp(-300));
   CHECK((x == y));
-  REQUIRE_THROWS(Celsius_Temp(-1) + Celsius_Temp(-273));
-  CHECK((x == (Celsius_Temp(10000) + Celsius_Temp(1))));
+  CHECK((x == (x + y)));
+  REQUIRE_THROWS(Celsius_Temp(-1) - Celsius_Temp(273));
 }
-
 
 TEST_CASE("Test wrapping in a simple range of 10 to 25.")
 {
-  CHECK((Ten_25(25) == (Ten_25(9))));
-  CHECK((Ten_25(24) == (Ten_25(8))));
-  CHECK((Ten_25(23) == (Ten_25(7))));
-  CHECK((Ten_25(22) == (Ten_25(6))));
-  CHECK((Ten_25(10) == (Ten_25(26))));
-  CHECK((Ten_25(11) == (Ten_25(27))));
-  CHECK((Ten_25(12) == (Ten_25(28))));
-  CHECK((Ten_25(13) == (Ten_25(29))));
+   for (uint8_t i=9, j=25; i > 0; i--, j--)
+   { 
+      CHECK((Ten_25(i) == Ten_25(j)));
+   }
+   for (uint8_t i=26, j=10; i <= 30; i++, j++)
+   { 
+      CHECK((Ten_25(i) == Ten_25(j)));
+   }   
+}
+
+TEST_CASE("Test arithmetic for .")
+{
+
 }

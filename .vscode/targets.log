@@ -1,3 +1,4 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.3
@@ -7,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug  7 03:11:05 2022
+# Make data base, printed on Wed Aug 10 00:29:29 2022
 
 # Variables
 
@@ -32,6 +33,8 @@ LC_NUMERIC = en_US.UTF-8
 # environment
 VSCODE_CWD = /home/schol-r-lea
 # environment
+WINDOWPATH = 2
+# environment
 MMGT_CLEAR = 1
 # environment
 CSF_XCAFDefaults = /usr/share/opencascade/resources/StdResource
@@ -41,12 +44,10 @@ CSF_PluginDefaults = /usr/share/opencascade/resources/StdResource
 CASROOT = /usr
 # environment
 LC_ADDRESS = en_US.UTF-8
-# environment
-GDM_LANG = en_US.utf8
 # default
 MAKE_COMMAND := make
 # environment
-GTK3_MODULES = xapp-gtk3-module:xapp-gtk3-module
+GTK3_MODULES = xapp-gtk3-module
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -60,15 +61,13 @@ PWD = /home/schol-r-lea/Documents/Programming/Projects/Ranged-Numeric-Types-for-
 # environment
 MAIL = /var/spool/mail/schol-r-lea
 # environment
-XDG_DATA_DIRS = /home/schol-r-lea/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+XDG_DATA_DIRS = /home/schol-r-lea/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # automatic
 %F = $(notdir $%)
 # environment
 VSCODE_CODE_CACHE_PATH = /home/schol-r-lea/.config/Code - OSS/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
-# environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # environment
 CSF_ShadersDirectory = /usr/share/opencascade/resources/Shaders
 # environment
@@ -92,25 +91,21 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXX9SJo2c/agent.1851
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX5AfUWS/agent.2130
 # default
 .SHELLFLAGS := -c
 # environment
 CSF_MDTVTexturesDirectory = /usr/share/opencascade/resources/Textures
-# environment
-XDG_CONFIG_DIRS = /etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-XDG_SESSION_DESKTOP = xfce
 # makefile
 MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 208465
+VSCODE_PID = 1875721
 # environment
-XDG_SESSION_TYPE = x11
+XDG_SESSION_TYPE = tty
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -118,7 +113,7 @@ CSF_XSMessage = /usr/share/opencascade/resources/XSMessage
 # environment
 DRAWDEFAULT = /usr/share/opencascade/resources/DrawResources/DrawDefault
 # environment
-SESSION_MANAGER = local/Alpha-Rising:@/tmp/.ICE-unix/1589,unix/Alpha-Rising:/tmp/.ICE-unix/1589
+SESSION_MANAGER = local/Alpha-Rising:@/tmp/.ICE-unix/1997,unix/Alpha-Rising:/tmp/.ICE-unix/1997
 # automatic
 *F = $(notdir $*)
 # environment
@@ -126,13 +121,11 @@ GERBIL_HOME = /opt/gerbil-scheme-git
 # environment
 MANPATH = /home/linuxbrew/.linuxbrew/share/man:
 # environment
-QT_QPA_PLATFORMTHEME = qt5ct
-# environment
 CHROME_DESKTOP = code-oss.desktop
 # environment
 CSF_SHMessage = /usr/share/opencascade/resources/SHMessage
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-JJjhpJJ0qa,guid=829a6ee8be86bcd24b0df21d62f2c4c7
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
@@ -150,7 +143,7 @@ MAKECMDGOALS := all
 # environment
 DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/schol-r-lea/.cache/dotnet_bundle_extract
 # environment
-SHLVL = 0
+SHLVL = 2
 # environment
 CSF_TObjDefaults = /usr/share/opencascade/resources/StdResource
 # environment
@@ -158,7 +151,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/schol-r-lea/.local/bin:/opt/gerbil-scheme-git/bin:/home/schol-r-lea/Deployments/pamac-build/pamac-build/gerbil-scheme-git/src/gerbil-build/binx:/home/schol-r-lea/opt/cross/bin:/home/schol-r-lea/opt/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/schol-r-lea/.local/bin:/opt/gerbil-scheme-git/bin:/home/schol-r-lea/Deployments/pamac-build/pamac-build/gerbil-scheme-git/src/gerbil-build/binx:/home/schol-r-lea/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/plan9/bin:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/plan9/bin:/usr/lib/jvm/default/bin:/opt/marytts/bin:/opt/plan9/bin
+PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/schol-r-lea/.local/bin:/opt/gerbil-scheme-git/bin:/home/schol-r-lea/Deployments/pamac-build/pamac-build/gerbil-scheme-git/src/gerbil-build/binx:/home/schol-r-lea/opt/cross/bin:/home/schol-r-lea/opt/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/schol-r-lea/.local/bin:/opt/gerbil-scheme-git/bin:/home/schol-r-lea/Deployments/pamac-build/pamac-build/gerbil-scheme-git/src/gerbil-build/binx:/home/schol-r-lea/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/plan9/bin:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/plan9/bin:/usr/lib/jvm/default/bin:/opt/marytts/bin:/opt/plan9/bin:/home/schol-r-lea/opt/cross/bin:/home/schol-r-lea/opt/bin
 # default
 MAKEFILES := 
 # environment
@@ -176,6 +169,8 @@ LC_TIME = en_US.UTF-8
 # environment
 GRADLE_HOME = /usr/share/java/gradle
 # environment
+INVOCATION_ID = b23cdf1edc5a416b9b718b74e5967f96
+# environment
 CSF_StandardLiteDefaults = /usr/share/opencascade/resources/StdResource
 # environment
 CSF_STEPDefaults = /usr/share/opencascade/resources/XSTEPResource
@@ -186,17 +181,13 @@ LC_TELEPHONE = en_US.UTF-8
 # environment
 XDG_SEAT = seat0
 # environment
-XDG_CURRENT_DESKTOP = XFCE
-# environment
 CSF_MIGRATION_TYPES = /usr/share/opencascade/resources/StdResource/MigrationSheet.txt
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.pdf=00;32:*.ps=00;32:*.txt=00;32:*.patch=00;32:*.diff=00;32:*.log=00;32:*.tex=00;32:*.doc=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 +F = $(notdir $+)
 # environment
-XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
-# environment
-DESKTOP_SESSION = xfce
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -204,19 +195,21 @@ LOGNAME = schol-r-lea
 # environment
 CSF_LANGUAGE = us
 # environment
-LOG_DST = /home/schol-r-lea/.config/Code - OSS/logs/20220806T195935/exthost1/dendron.dendron/dendron.log
+LOG_DST = /home/schol-r-lea/.config/Code - OSS/logs/20220809T234241/exthost1/dendron.dendron/dendron.log
 # environment
-XDG_VTNR = 7
+XDG_VTNR = 2
 # makefile
 .DEFAULT_GOAL := 
 # environment
-CSF_TObjMessage = /usr/share/opencascade/resources/TObj
+SYSTEMD_EXEC_PID = 1785
 # environment
-EDITOR = /usr/bin/nano
+YAOURT_COLORS = nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35
+# environment
+CSF_TObjMessage = /usr/share/opencascade/resources/TObj
 # environment
 DISPLAY = :0.0
 # environment
-GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+GTK_MODULES = canberra-gtk-module
 # environment
 USER = schol-r-lea
 # default
@@ -228,7 +221,7 @@ LC_MEASUREMENT = en_US.UTF-8
 # environment
 DEBUGINFOD_URLS = https://debuginfod.archlinux.org 
 # environment
-SSH_AGENT_PID = 1852
+SSH_AGENT_PID = 2131
 # environment
 _ = /usr/bin/make
 # environment
@@ -246,8 +239,6 @@ XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-GTK2_RC_FILES = /home/schol-r-lea/.gtkrc-2.0
-# environment
 HOME = /home/schol-r-lea
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -256,9 +247,11 @@ DRAWHOME = /usr/share/opencascade/resources/DrawResources
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-10544c3d-1.69.2-main.sock
 # environment
+TERM = linux
+# environment
 HG = /usr/bin/hg
 # environment
-XDG_SESSION_ID = 2
+XDG_SESSION_ID = 1
 # environment
 LDPATH = /opt/BitDefender-scanner/var/lib
 # environment
@@ -270,28 +263,19 @@ PANEL_GDK_CORE_DEVICE_EVENTS = 0
 # default
 SUFFIXES := 
 # environment
-QT_AUTO_SCREEN_SCALE_FACTOR = 0
-# environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/schol-r-lea
 # environment
 CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # environment
-XDG_MENU_PREFIX = xfce-
-# environment
 DOTNET_ROOT = /usr/share/dotnet
-# environment
-GDMSESSION = xfce
 # environment
 LC_IDENTIFICATION = en_US.UTF-8
 # variable set hash-table stats:
- 
-# Load=139/1024=14%, Rehash=0, Collisions=20/166=12%
+# Load=131/1024=13%, Rehash=0, Collisions=22/158=14%
 
 # Pattern-specific Variable Values
 
@@ -357,6 +341,6 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Sun Aug  7 03:11:05 2022
+# Finished Make data base on Wed Aug 10 00:29:29 2022
 
  

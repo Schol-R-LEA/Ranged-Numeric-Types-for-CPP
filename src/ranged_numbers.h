@@ -73,6 +73,13 @@ namespace Ranged
       restrict_upper();
     };
 
+    Ranged_Numbers(Ranged_Numbers& rn):value(rn.v)
+    {
+      restrict_lower();
+      restrict_upper();
+    };
+
+
     Ranged_Numbers operator+(const Ranged_Numbers& op)
     {
       return Ranged_Numbers(this->value + op.value);

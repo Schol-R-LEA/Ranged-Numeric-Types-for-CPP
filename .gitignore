@@ -31,3 +31,6 @@
 *.out
 *.app
 tests/test
+
+# VS Code
+.vscode

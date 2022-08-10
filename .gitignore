@@ -34,3 +34,4 @@ tests/test
 
 # VS Code
 .vscode
+.vscode/*

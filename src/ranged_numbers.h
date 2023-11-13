@@ -2,21 +2,32 @@
 #define _RANGED_NUMBERS_H_
 
 #include <iostream>
+#include <exception>
 #include <typeinfo>
 #include <cmath>
 
-namespace Ranged 
+namespace Ranged
 {
   enum Flow_Characteristic {WRAP, SATURATE, EXCEPT};
 
-  class Underflow_Exception
+  template <typename T> class Underflow_Exception: public std::exception
   {
-
+  public:
+    Underflow_Exception() {};
+    virtual const char* what(T value) const noexcept {
+      std::string type = typeid(T).name();
+      return ("Underflow of type " + type + ": " + std::to_string(value)).c_str();
+    };
   };
 
-  class Overflow_Exception
+  template <typename T> class Overflow_Exception: public std::exception
   {
-
+  public:
+    Overflow_Exception() {};
+    virtual const char* what(T value) const noexcept {
+      std::string type = typeid(T).name();
+      return ("Overflow of type " + type + ": " + std::to_string(value)).c_str();
+    };
   };
 
 
@@ -40,7 +51,7 @@ namespace Ranged
               value = lower;
               break;
             default:
-              throw Underflow_Exception();
+              throw Underflow_Exception<T>();
             }
         }
     };
@@ -60,7 +71,7 @@ namespace Ranged
               value = upper;
               break;
             default:
-              throw Overflow_Exception();
+              throw Overflow_Exception<T>();
             }
         }
     };
@@ -100,7 +111,7 @@ namespace Ranged
       return Ranged_Numbers(this->value / op.value);
     };
 
-   Ranged_Numbers operator=(const Ranged_Numbers& op)
+  Ranged_Numbers operator=(const Ranged_Numbers& op)
     {
       this->value = op.value;
     };
@@ -119,15 +130,15 @@ namespace Ranged
 
   template <typename OST> std::ostream& operator<<(std::ostream& os, const OST& rn)
   {
-     if (typeid(rn.value) == typeid(unsigned char) ||  typeid(rn.value) == typeid(signed char))
-     {
+    if (typeid(rn.value) == typeid(unsigned char) ||  typeid(rn.value) == typeid(signed char))
+    {
         os << static_cast<int16_t>(rn.value);
-     }
-     else
-     {      
+    }
+    else
+    {      
         os << rn.value;
-     }
-     return os;
+    }
+    return os;
   }
 };
 

@@ -17,5 +17,5 @@ Celsius_Temp z(5);
 std::out << w / z;    // -2
 std::cout << x + z;   // saturates, 10000
 std::out << y - z;    // throws an underflow exception
-
+'
 ```

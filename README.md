@@ -3,7 +3,7 @@ A simple template class for generating integer and floating-point types within f
 Takes a base type, a lower bound, a parameter setting how underflows should be handled, an
 upper bound, another parameter setting how overlow conditions should be handled.
 
-<<Example Usage>>
+##Example Usage
 This defines an integer class `Celsius_Temp` with a range of -273...10000, where underflow throws an exception and overflow saturates.
 
 ```c++
